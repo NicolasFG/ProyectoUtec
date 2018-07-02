@@ -15,9 +15,9 @@ if len(n)>5:
     if letras>3 and nu>0:
         print('Valido')
     else:
-        print('Invalido')
+        print('Usuario Invalido')
 else:
-     print('Invalido')
+     print('Usuario Invalido')
 if len(x) >6:
     for i in x:
         if i.isupper():
@@ -32,7 +32,8 @@ if len(x) >6:
         else:
             print('Ingrese de nuevo la contraseña')
     else:
-        print('No Válido)
+        print('No Válido')
 else:
     print('No valido')
+
 
