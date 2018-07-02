@@ -1,8 +1,23 @@
+n=str(input('Ingrese nombre de usuario'))
 c=str(input('Ingrese un correo'))
 x=str(input('Inserte contraseña'))
 numeros=['0','1','2','3','4','5','6','7','8','9']
+letras=0
+nu=0
 num=0
 may=0
+if len(n)>5:
+    for e in n:
+        if e.isupper() or e.islower:
+            letras=letras+1
+        if e in numero:
+            nu=nu+1
+    if letras>3 and nu>0:
+        print('Valido')
+    else:
+        print('Invalido')
+else:
+     print('Invalido')
 if len(x) >6:
     for i in x:
         if i.isupper():
@@ -20,3 +35,4 @@ if len(x) >6:
         print('No Válido)
 else:
     print('No valido')
+
