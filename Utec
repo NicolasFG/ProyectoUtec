@@ -1,18 +1,22 @@
-x=str(input('Inserte contrasena'))
-l=len(x)
-j=l
+c=str(input('Ingrese un correo'))
+x=str(input('Inserte contraseña'))
 numeros=['0','1','2','3','4','5','6','7','8','9']
 num=0
 may=0
-for i in x:
-    if i.isupper():
-        may=may+1
-    l=l-1
-for i in x:
-    if i in numeros:
-        num=num+1
-if may>0 and num>0 and j>6:
-    print('Valido')
+if len(x) >6:
+    for i in x:
+        if i.isupper():
+            may=may+1
+    for i in x:
+        if i in numeros:
+            num=num+1
+    if may>0 and num>0:
+        y=str(input('Inserte contraseña'))
+        if y==x:
+            print('Valido')
+        else:
+            print('Ingrese de nuevo la contraseña')
+    else:
+        print('No Válido)
 else:
     print('No valido')
-print("hola")
